@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "toufoumaster.ATMTICFQ.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "MainMenuBackgroundMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

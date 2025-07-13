@@ -1,19 +1,19 @@
-package turniplabs.examplemod;
+package toufoumaster.ATMTICFQ;
 
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.client.Minecraft;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import turniplabs.halplibe.util.ClientStartEntrypoint;
 import turniplabs.halplibe.util.GameStartEntrypoint;
 import turniplabs.halplibe.util.RecipeEntrypoint;
 
-
-public class ExampleMod implements ModInitializer, RecipeEntrypoint, GameStartEntrypoint {
-    public static final String MOD_ID = "examplemod";
+public class ATMTICFQ implements ModInitializer, RecipeEntrypoint, GameStartEntrypoint {
+    public static final String MOD_ID = "atmticfq";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+	public final VintageQuestingATMTICFQPlugin VQPlugin = new VintageQuestingATMTICFQPlugin();
     @Override
     public void onInitialize() {
-        LOGGER.info("ExampleMod initialized.");
+        LOGGER.info("atmticfq initialized.");
     }
 
 	@Override
@@ -33,6 +33,7 @@ public class ExampleMod implements ModInitializer, RecipeEntrypoint, GameStartEn
 
 	@Override
 	public void afterGameStart() {
-
+		VQPlugin.initializePlugin();
+		Minecraft.getMinecraft().mainMenuBackground.deleteTextures();
 	}
 }

@@ -35,6 +35,7 @@ version = mod_version
 loom {
     noIntermediateMappings()
     customMinecraftMetadata.set("https://downloads.betterthanadventure.net/bta-client/$bta_channel/v$bta_version/manifest.json")
+	accessWidenerPath = file("src/main/resources/atmticfq.accesswidener")
 }
 
 repositories {
@@ -113,7 +114,8 @@ dependencies {
     implementation("org.apache.commons:commons-lang3:3.12.0")
     include("org.apache.commons:commons-lang3:3.12.0")
 
-    modImplementation("com.github.Better-than-Adventure:legacy-lwjgl3:1.0.5")
+	modImplementation("com.github.Better-than-Adventure:legacy-lwjgl3:1.0.5")
+	modImplementation("sunsetsatellite:vintage-questing:2.0.0-alpha.4")
     implementation(platform("org.lwjgl:lwjgl-bom:$lwjglVersion"))
 
     runtimeOnly("org.lwjgl:lwjgl::$lwjglNatives")

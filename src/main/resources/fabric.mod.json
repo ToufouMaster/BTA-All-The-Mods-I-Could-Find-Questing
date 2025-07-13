@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "atmticfq",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "ATMTICFQ",
+  "description": "literally a mod that add quests to the modpack i made that contains all the mods that i could find.",
   "authors": [
-    "Turnip Labs"
+    "ToufouMaster"
   ],
   "contact": {
     "homepage": "",
@@ -19,25 +19,26 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"toufoumaster.ATMTICFQ.ATMTICFQ"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"toufoumaster.ATMTICFQ.ATMTICFQ"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"toufoumaster.ATMTICFQ.ATMTICFQ"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"toufoumaster.ATMTICFQ.ATMTICFQ"
 		]
 	},
+	"accessWidener" : "atmticfq.accesswidener",
   "mixins": [
-      "examplemod.mixins.json"
+      "ATMTICFQ.mixins.json"
   ],
 
   "depends": {
 		"minecraft": "*",
-    "fabricloader": ">=0.15.5"
+		"fabricloader": ">=0.15.5"
   },
   "suggests": {
   }
