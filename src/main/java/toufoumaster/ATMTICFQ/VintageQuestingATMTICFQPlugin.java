@@ -35,33 +35,30 @@ public class VintageQuestingATMTICFQPlugin {
 		for (QuestTemplate quest : theEarlyGameQuests) {
 			THE_EARLY_GAME_CHAPTER.addQuest(quest);
 		}
-		for (Quest quest : THE_EARLY_GAME_CHAPTER.getQuests()) {
-			quest.setupPrerequisites();
-		}
-
 		for (QuestTemplate quest : stardewFarmingQuests) {
 			STARDEW_FARMING_CHAPTER.addQuest(quest);
+		}
+		for (QuestTemplate quest : storageQuests) {
+			STORAGE_CHAPTER.addQuest(quest);
+		}
+		for (QuestTemplate quest : computerCraftQuests) {
+			COMPUTER_CRAFT_CHAPTER.addQuest(quest);
+		}
+		for (QuestTemplate quest : terraponQuests) {
+			TERRAPON_CHAPTER.addQuest(quest);
+		}
+
+		for (Quest quest : THE_EARLY_GAME_CHAPTER.getQuests()) {
+			quest.setupPrerequisites();
 		}
 		for (Quest quest : STARDEW_FARMING_CHAPTER.getQuests()) {
 			quest.setupPrerequisites();
 		}
-
-		for (QuestTemplate quest : storageQuests) {
-			STORAGE_CHAPTER.addQuest(quest);
-		}
 		for (Quest quest : STORAGE_CHAPTER.getQuests()) {
 			quest.setupPrerequisites();
 		}
-
-		for (QuestTemplate quest : computerCraftQuests) {
-			COMPUTER_CRAFT_CHAPTER.addQuest(quest);
-		}
 		for (Quest quest : COMPUTER_CRAFT_CHAPTER.getQuests()) {
 			quest.setupPrerequisites();
-		}
-
-		for (QuestTemplate quest : terraponQuests) {
-			TERRAPON_CHAPTER.addQuest(quest);
 		}
 		for (Quest quest : TERRAPON_CHAPTER.getQuests()) {
 			quest.setupPrerequisites();

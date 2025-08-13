@@ -124,12 +124,25 @@ public class TheEarlyGameChapter extends QuestChapterPage {
 			"workbench",
 			Blocks.WORKBENCH,
 			listOf(
-				new ItemStack(Blocks.WORKBENCH, 1)
+				new ItemStack(Blocks.WORKBENCH, 1),
+				new ItemStack(Item.getItem(11547), 1)
 			),
 			listOf(gatherwood),
-			2, 0
+			2, 0,
+			Logic.AND, Logic.OR, false
 		);
 		questList.add(workbench);
+
+		QuestTemplate portable_workbench = createRetrievalQuest(
+			"portable_workbench",
+			Item.getItem(19554),
+			listOf(
+				new ItemStack(Item.getItem(19554), 1)
+			),
+			listOf(workbench),
+			2, 1
+		);
+		questList.add(portable_workbench);
 
 		QuestTemplate woodentools = createRetrievalQuest(
 			"woodentools", Items.TOOL_PICKAXE_WOOD,
@@ -139,7 +152,7 @@ public class TheEarlyGameChapter extends QuestChapterPage {
 				new ItemStack(Items.TOOL_SWORD_WOOD, 1)
 			),
 			listOf(workbench),
-			3, 0, false
+			3, 0, Logic.AND, Logic.OR, false
 		);
 		questList.add(woodentools);
 
