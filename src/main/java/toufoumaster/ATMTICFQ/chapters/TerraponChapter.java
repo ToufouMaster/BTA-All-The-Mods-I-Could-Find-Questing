@@ -96,7 +96,7 @@ public class TerraponChapter extends QuestChapterPage {
 			listOf(
 				new ItemStack(Item.getItem(25400), 1, 0)
 			),
-			listOf(VintageQuestingATMTICFQPlugin.getQuest("terrapon")),-2, 0
+			listOf(),-2, 0
 		); questList.add(orbofrogmal);
 
 		QuestTemplate reinforcedleather = createRetrievalQuest(

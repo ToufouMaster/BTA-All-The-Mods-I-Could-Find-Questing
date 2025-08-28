@@ -105,7 +105,7 @@ public class StorageChapter extends QuestChapterPage {
 			listOf(
 				new ItemStack(Blocks.getBlock(2500), 1, 0)
 			),
-			listOf(VintageQuestingATMTICFQPlugin.getQuest("storage")),
+			listOf(),
 			0, 0
 		);
 		questList.add(ironchest);
